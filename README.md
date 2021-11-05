@@ -2,9 +2,9 @@
 
 A mixology app used to identify the drinks the user can make by having them input the ingredients they have and reading from a file of possible combinations.
 
-Object Oriented Programming: In order to increase the efficiency of the algorithm, object oriented programming was implemented, with each drink acting as its own object when being analyzed.  
+**Object Oriented Programming**: In order to increase the efficiency of the algorithm, object oriented programming was implemented, with each drink acting as its own object when being analyzed.  
 
-Ease-of-Access Features: In order to allow for the best and easiest access by the user, a multitude of different features were put in place to allow for less work to be put in by the user.
+**Ease-of-Access Features**: In order to allow for the best and easiest access by the user, a multitude of different features were put in place to allow for less work to be put in by the user.
 
 ## How to run this application:
 
