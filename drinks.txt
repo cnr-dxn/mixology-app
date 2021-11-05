@@ -1,0 +1,85 @@
+Classic Gin Martini,gin,dry vermouth
+Dry Gin Martini,gin,dry vermouth
+Perfect Gin Martini,gin,dry vermouth,sweet vermouth
+Dirty Gin Martini,gin,dry vermouth,olive juice
+Classic Daiquiri,light rum,lime juice,simple syrup
+Pina Colada,light rum,pineapple juice
+Margarita,tequila,lime juice,triple sec
+Strawberry Margarita,tequila,triple sec,strawberry liqueur,lime juice
+Cadillac Margarita,tequila,godiva,triple sec,sour mix
+Moscow Mule,vodka,ginger beer,lime juice
+Key Lime Pie Martini,vanilla vodka,rumchata,lime juice
+Orgasm,amaretto,kahlua,heavy cream,tequila
+Appletini,vodka,apple schnapps,apple puree,lemon juice
+Chocolate Martini,vodka,godiva,white creme de cacao
+Cosmo,vodka,triple sec,lime juice,cranberry juice
+Vodka Soda,vodka,soda water
+Gin and Soda,gin,soda water
+Vodka Tonic,vodka,tonic water
+Gin and Tonic,gin,tonic water
+White Russian,vodka,kahlua,heavy cream
+Campari Spritz,campari,sparkling wine
+Aperol Spritz,aperol,sparkling wine
+Irish Coffee,irish whiskey,brown sugar,coffee,heavy cream
+Manhattan,whiskey,sweet vermouth,angostura bitters
+Mint Juliep,bourbon,simple syrup,mint leaves
+Mojito,light rum,simple syrup,mint leaves,lime juice,soda water
+College Mojito,light rum,simple syrup,mint leaves,lime juice,soda water
+Better Than Sex,light rum,pina colada mix,grenadine
+Vegas Bombs,captain morgan,peach schnapps,red bull
+Hot Choccy,dark rum,hot chocolate,heavy cream
+Long Island Iced Tea,vodka,gin,tequila,triple sec,rum,lemon juice,coke
+Cucumber Lime Press,cucumber vodka,lime juice,sprite,soda water
+Huckleberry Lemonade,mint lemonade,vodka,huckleberries,huckeberry juice
+Sex on the Beach,vodka,peach schnapps,crandberry juice
+S'mores Martini,vanilla vodka,chocolate liqueur,heavy cream
+Mimosa,orange juice,champagne
+Watermelon Margarita,tequila,lime juice,watermelon
+Old Fashioned,whiskey,simple syrup,angostura bitters
+Bourbon Old Fashioned,bourbon,simple syrup,angostura bitters
+Manhattan,scotch,sweet vermouth,angostura bitters
+Cuba Libre,light rum,lime juice,mint leaves
+Dark and Stormy,spiced rum,ginger beer,lime juice
+Jungle Juice,vodka,gatorade
+Screwdriver,vodka,orange juice
+Vodka Lemondade,vodka,lemonade
+Gabe's Spiked Cider,whiskey,apple cider
+Kaleidoscope,vokda,pre workout,gatorade
+Centripital Press,vodka,soda water,simple syrup,lime juice,ginger beer
+Harmony,rum,chocolate milk,heavy cream,pina colada mix
+Daquari,rum,lime juice,simple syrup
+Golden Sunrise,vodka,pineapple juice,lime juice,simple syrup,grenadine
+Bearly Liquid,vodka,simple syrup,lemon juice,gummy bears
+Strawberry Cosmo,vodka,lemon juice,simple syrup,prosecco,raspberry puree
+Limoncello Mule,vodka,limoncello,ginger beer
+Icelandic Pear 75,vodka,lemon juice,simple syrup,pear puree,soda water
+Pear Martini,vodka,st germain,champagne
+20th Century,vodka,lemon juice,creme de cacao,spiced pear liqueur,maple syrup
+Broke Colada,malibu,pineapple juice
+Juicy Juices,vodka,juice box
+Two Birds One Stone,emergen-c,vodka
+Pank Drank,vodka,crystal light
+Snoop Dogg,gin,orange juice
+Happy Apple,malibu,apple juice
+Creamy Choccy,bailey's,chocolate milk
+Rooty Rum,rum,root beer
+Why the Fuck Would You Do This,whiskey,lemonade
+Horse's Neck,whiskey,ginger ale
+Slip 'n Slide,vodka,lime juice,grenadine
+Ginhound,gin,grapefruit juice
+Vodkahound,vodka,grapefruit juice
+Beermosa,beer,orange juice
+Creamsicles,vodka,orange juice,heavy cream
+Cheap Ass Margarita,mountain dew,tequila
+The Force,vodka,lemonade,red bull
+Gatorita,tequila,gatorade
+Riptide,vodka,beer,lemonade
+Cape Cod,vodka,cranberry juice,lime juice
+John Daly,vodka,lemonade,tea
+Duck Fart,kahlua,baileys,whiskey
+Razorback,rum,vodka,ameretto,kahlua
+Scarlett O'Hara,southern comfort,lime juice,cranberry juice
+Mai Tai,light rum,dark rum,orange juice,triple sec,lime juice,simple syrup
+Maryland,bourbon,vodka,orange juice,peach schnapps,lime juice,lemon juice,simple syrup
+Caddy,vodka,orange juice,kool-aid
+Cherry Bounce,vodka,cranberry juice,lime juice,soda water,grenadine

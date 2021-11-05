@@ -1,0 +1,281 @@
+#include "Drink.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <fstream>
+#include <chrono>
+#include <thread>
+#include <limits>
+
+using namespace std;
+using namespace std::this_thread;
+using namespace std::chrono;
+
+string convert(string input)
+{
+        string finalString = "";
+        for (int i = 0; i < input.length(); i++)
+        {
+                finalString += tolower(input[i]);
+        }
+
+        return finalString;
+}
+
+void checkChoicesAgainst(vector<string> &usersIngredients, vector<Drink> &drinks)
+{
+	bool determiner = false;
+	int counter = 0;
+	//for (int i = 0; i < usersIngredients.size(); i++)
+	for (int i = 0; i < drinks.size(); i++)
+	{
+		//for (int j = 0; j < drinks.size(); j++)
+		for (int j = 0; j < usersIngredients.size(); j++)
+		{
+			for (int k = 0; k < drinks[i].getIngredientsLength(); k++)
+			{
+				if (convert(usersIngredients[j]) == convert(drinks[i].getIngredientsAt(k)))
+				{
+					counter++;
+				}
+			}
+		}
+
+		if (counter == drinks[i].getIngredientsLength())
+		{
+			determiner = true;
+			cout << drinks[i].getName() << endl;
+		}
+		
+		counter = 0;
+	}
+
+	if (determiner == false)
+	{
+		cout << "Unfortunately no drinks can be found just with those ingredients." << endl;
+	}
+}
+
+bool checkChoiceValidity(string input, vector<Drink> &drinks)
+{
+	bool determiner = false;
+	for (int i = 0; i < drinks.size(); i++)
+	{
+		for (int j = 0; j < drinks[i].getIngredientsLength(); j++)
+		{
+			if (convert(input) == convert(drinks[i].getIngredientsAt(j)))
+			{
+				determiner = true;
+			}
+		}
+	}
+
+	return determiner;
+}
+
+int split(string lineSequence, char delimitor, vector<string> &vect)
+{                 
+	string temp;
+        // Establish a temporary variable used to transfer array values later
+        // in the fuction
+        int lengthwords = 0;
+
+        if(lineSequence == "")
+        // If the line doesn't exist, return 0
+        {
+            return 0;
+        }
+
+        else
+        {
+
+        lineSequence = lineSequence + delimitor;
+        // Ensure the sequence includes the delimitor as to prevent unwanted
+        // values being populated
+
+        for(int count = 0; count < lineSequence.length(); count++)
+        // Enter for loop
+        {
+
+            if(lineSequence[count] != delimitor)
+            // If the character in the string at that certain point isn't
+            // the delimitor, set the temporary variable equal to the temp character
+            // plus the new character
+            {
+                temp = temp + lineSequence[count];
+            }
+
+            else
+            // Else, create an entry in the array that equals the temp variable
+            {
+                if(temp.length()!=0)
+                {
+                        vect.push_back (temp);
+                        lengthwords++;
+                }
+                temp = "";
+                // Clear the temp variable
+            }   
+	  }
+	}
+        return lengthwords;
+        // Return the counter variable (lengthWords)
+}
+
+int main()
+{
+	ifstream fileTool1;
+	ifstream fileTool2;
+	
+	vector<Drink> drinks;
+	vector<string> ingredients;
+	vector<string> usersIngredients;
+	bool determiner;
+	string continuer = "";
+//=====================================================================================================
+	fileTool1.open("drinks.txt");
+
+                if (fileTool1.is_open())
+                {
+                        string line = "";
+                        int counter = 0;
+                        while (getline(fileTool1, line))
+                        {
+				if (line == "" && line == " ")
+				{
+
+				}
+
+                                vector<string> tmp;
+                                
+				tmp.clear();
+
+                                split(line, ',', tmp);
+
+                                Drink temp;
+                                // Split the line using the split function by commas
+                                temp.setName(tmp[0]);
+                                // Set the first entry in the array equal to the author
+                                tmp.erase (tmp.begin());
+                                // Set the second entry in the array equal to the title
+                                temp.setIngredients(tmp);
+                                // Set the second entry in the array equal to the title
+                                drinks.push_back(temp);
+                                // Store the index of the book array equal to the temp
+                                // object
+                                counter++;
+                                // Incriment the number of books now stored in the
+                                // arrays by 1
+                        }
+                }
+
+                else
+                {
+                        cout << "The file didn't open correctly" << endl;
+                        sleep_for(milliseconds(60));
+                }
+        fileTool1.close();
+//=====================================================================================================
+	fileTool2.open("ingredients.txt");
+
+                if (fileTool2.is_open())
+                {
+                        string line = "";
+                        int counter = 0;
+                        while (getline(fileTool2, line))
+                        {
+				if (line[0] == '=')
+				{
+	
+				}
+
+				else
+				{
+					ingredients.push_back(line);
+				}
+                        }
+                }
+
+                else
+                {
+                        cout << "The file didn't open correctly" << endl;
+                        sleep_for(milliseconds(60));
+                }
+
+        fileTool2.close();
+
+//=====================================================================================================
+	string choice;
+
+	for (int i = 0; i < 50; i++)
+	{
+		cout << endl;
+	}
+
+	while (continuer != "n" && continuer != "N")
+	{
+		cout << endl;
+		cout << "What ingredients do you have? When finished entering, enter 'done'." << endl;
+	
+		getline(cin, choice);
+	
+		while (choice != "done" && choice != "Done")
+		{
+			determiner = checkChoiceValidity(choice, drinks);
+		
+			if (determiner == false)
+			{
+				cout << "Unfortunately, this database has no entry for '" << choice << "', either due to that not being an ingredient or it not being used in this barbook." << endl;
+				cout << "Please enter another ingredient: " << endl;
+			}
+
+			else
+			{
+				usersIngredients.push_back(choice);
+				cout << "'"<< choice << "' added." << endl;
+			}
+		
+		getline(cin, choice);
+		}
+
+		cout << endl;
+		checkChoicesAgainst(usersIngredients, drinks);
+		cout << endl;
+
+		usersIngredients.clear();
+	
+		cout << "Would you like to continue? Y or N. " << endl;
+		getline(cin, continuer);
+
+		while (continuer != "y" && continuer != "Y" && continuer != "n" && continuer != "N")
+		{
+			cout << "Please enter either one of the options provided" << endl;
+		}
+
+	}
+	// rest of the stuff goes here
+	// - pushback of the ingredient √
+	// - for loops checking to see if the ingredients make up a drink
+	//   - two for loops, same structure of the check validity
+	//   - count the matches for a specific drink, if # of matches equals # of ingredients in a drink, print that to the screen
+
+
+	// fill vector of drinks with name/ingredients √
+	// print ingredients file √
+	// ask what the user has from this list
+	// - if not in list, say so
+	// fill vector of user's ingredients
+	// for loops to check to see if ingredients exist
+	// - printing some should they exist	
+
+}
+
+// Notes:
+// - Bunch of nested for loops to check to see if the user holds the thing if multiple exist
+//   (i < numberOfUserThings [function in vectors]) 
+//   - 3 for loops (should work I think)
+// - make split a vector instead of an array, set vectors equal to eachother, 
+//   set the name equal to the first entry, popback the first "ingredient" 
+//   which is really the name
+

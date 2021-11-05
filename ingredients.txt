@@ -1,0 +1,76 @@
+==============Spirits==============
+Vodka
+Gin
+Tequila
+Rum
+Light Rum
+Dark Rum
+Triple Sec
+Curaco
+Bourbon
+Scotch
+Whiskey
+Rye
+Corn
+Cider
+Mead
+Wine
+Sake
+Brandy
+Cognac
+Baileys
+Jaegar
+Fireball
+Amaretto
+Campari
+Aperol
+Cointreau
+Frangelico
+Rumchata
+Kahlua
+Dry Vermouth
+Sweet Vermouth
+Passionfruit Liqueur
+Strawberry Liqueur
+Godiva
+Vanilla Vodka
+Grand Marnier
+Apple Schnapps
+Peppermint Schnapps
+Peach Schnapps
+Citron Vodka
+Sparkling Wine
+Irish whiskey
+==============Juices/Syrups==============
+Lime Juice
+Orange Juice
+Lemon Juice
+Coconut Cream
+Pineapple Juice
+Grenadine
+Simple Syrup
+Mint Simple Syrup
+Ginger Simple Syrup
+Lemonade
+Sour Mix
+Olive juice
+Peach Puree
+Strawberry Puree
+Apple Puree
+Chocolate Syrup
+Ginger Beer
+Heavy Cream
+Creme de Cacao
+White Creme de Cacao
+Cranberry Juice
+Angostura Bitters
+Sprite
+Club SodAngostura Bitters
+Sprite
+Club Soda
+Tonic Water
+Brown Sugar
+Coffee
+Mint Leaves
+Pina Colada Mix
+Red Bull
